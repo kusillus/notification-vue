@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <button @click="showNotify('Estado modificado','Se modifico correctamente', 1)">
+    <button @click="showNotify('Modulo X agregado','Se agrego correctamente', 1)">
       Este click
     </button>
-    <button @click="showNotify('Estado no modificado','Se produjo un error al modificar', 0)">
+    <button @click="showNotify('Modulo Y no agregado','Se produjo un error al agregar', 0)">
       Otro click
     </button>
     <notification
@@ -25,9 +25,8 @@ export default {
       notifyDescription: '',
       notifyStatus: 0,
       notify: [
-        {'title': 'soy un titulo', 'description': 'soy una descripcion', 'status': 1},
-        {'title': 'soy un titulo', 'description': 'soy una descripcion', 'status': 0},
-        {'title': 'soy un titulo', 'description': 'soy una descripcion', 'status': 1}
+        {'title': 'Modulo uno agregado', 'description': 'Se ha agregago correctamente al array', 'status': 1},
+        {'title': 'Modulo dos no agregado', 'description': 'No se ha podido agregar al array', 'status': 0}
       ]
     }
   },

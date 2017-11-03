@@ -1,12 +1,10 @@
 <template>
-
   <div class="notification-position">
       <card v-for="(el, idx) in notifyArray" :key="idx" :status="el.status">
         <h5 slot="title">{{el.title}}</h5>
         <span slot="description">{{el.description}}</span>
       </card>
   </div>
-
 </template>
 
 <script>

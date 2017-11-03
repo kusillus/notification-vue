@@ -1,7 +1,6 @@
 <template>
-
   <div class="notification-container">
-    <div class="icon-box" @click="status=!status">
+    <div class="icon-box">
       <i v-if="status">
         <svg style="fill:#4CAF50;"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z" /></svg>
       </i>
@@ -14,7 +13,6 @@
       <slot name="description"></slot>
     </div>
   </div>
-<!-- </transition>  -->
 </template>
 
 <script>
@@ -22,11 +20,9 @@ export default {
   props: ['status'],
   data () {
     return {
-      // status: 1
     }
   },
   methods: {
-
   }
 }
 </script>
@@ -36,15 +32,11 @@ export default {
   background-color: white;
   padding: .5rem .7rem;
   border-radius: .3rem;
-  // border: .1rem solid skyblue;
   display: flex;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
   margin-bottom: 0.6rem;
-  // right: -17rem;
-  // opacity: 0;
   position: relative;
   animation-duration: 2s;
-  // transition: all;
   animation-name: showHide;
   overflow: hidden;
 }
@@ -52,22 +44,14 @@ export default {
   0% {
     right: -20.6rem;
     opacity: 0;
-    // display: none;
   }
   30%{
     right: 0;
     opacity: 1;
-    // display: inline;
   }
-  // 70% {
-  //   right: 0;
-  //   opacity: 1;
-  //   // display: inline;
-  // }
   100%{
     right: 0;
     opacity: 1;
-    // display: none;
   }
 }
 .notification-detail{
@@ -93,11 +77,4 @@ export default {
     display: flex;
   }
 }
-// .fade-leave{
-//   transition: opacity .3s;
-//   opacity: 0;
-// }
-// .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-//   opacity: 0
-// }
 </style>
