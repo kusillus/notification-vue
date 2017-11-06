@@ -1,6 +1,6 @@
 # notification-vue
 
-> notificacion estilo mac
+> Mensajes de notificaciones en vue, mira el ejemplo en [vivo](https://kusillus.github.io/notification-vue/)
 
 ## Build Setup
 
